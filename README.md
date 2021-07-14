@@ -2,7 +2,7 @@
 
 # BookRec
 
-> BookRec is special app to be in touch with people to suggest and advise books that you find useful and meaningful to each other. You can follow most loked recommendators.
+> BookRec is a special app to be in touch with people to suggest and advise books that you find useful and meaningful to each other. You can follow the most liked recommendations.
 <table>
 <tr><td> <img src="./app/assets/images/login_page.PNG" alt="Example" style="width: 100%;"> </td></tr>
 <tr><td> <img src="./app/assets/images/opinion.PNG" alt="Example" style="width: 100%;"> </td></tr>
