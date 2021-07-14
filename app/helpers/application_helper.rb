@@ -112,8 +112,8 @@ module ApplicationHelper
             tag('img', src: url_for(f.follower.photo), class: %w[img-80 rounded-circle mx-auto d-block])
           end)
           concat(content_tag(:div, class: 'col-md-8') do
-            content_tag :div, class: 'card-body' do
-              concat(content_tag(:div, class: 'card-title fw-bold') do
+            content_tag :div, class: 'px-3 py-0' do
+              concat(content_tag(:div, class: 'text-white') do
                 concat(content_tag(:span, f.follower.full_name))
               end)
               concat(content_tag(:span, follow_or_unfollow_friend_request(f.follower)))

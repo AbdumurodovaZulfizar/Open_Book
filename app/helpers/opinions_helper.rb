@@ -25,7 +25,7 @@ module OpinionsHelper
           end)
           concat(content_tag(:div, class: 'col-11') do
             content_tag :div, class: 'card-body m-0 py-0' do
-              concat(content_tag(:h5, class: '') do
+              concat(content_tag(:h5, class: 'none') do
                        link_to(user_path(opinion.author.id)) do
                          concat(content_tag(:div, opinion.author.username, class: 'link-dark none'))
                        end

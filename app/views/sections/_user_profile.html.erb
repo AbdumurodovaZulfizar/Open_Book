@@ -1,40 +1,41 @@
 <div>
     <div>
         <div class="row">
-        <div class='col-12 mx-auto'>
-            <%= right_user_photo %></div>
-            <span class="card-body text-center">
+            <div class='col-4'>
+                <%= right_user_photo %>
+            </div>
+            <div class="card-body text-center col-8">
                 <span class="card-title link-dark fw-bold text-white fs-5 p-0 m-0"><%= @user.username %></span><br />
                 <%= follow_or_unfollow_friend_request(@user) %>
                 <span class="card-text"></span>
-            </span>
+            </div>
         </div>
     </div>
     <div>
         <div class="row">
             <div class="col-4">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold"><%= @user.opinions.count %></h5>
-                    <p class="card-text"><small class="text-muted">Tweets</small></p>
+                    <h5 class="text-center text-white"><%= @user.opinions.count %></h5>
+                    <p class="card-text"><small class="text-white">Tweets</small></p>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold"><%= @user.followings.count %></h5>
-                    <p class="card-text"><small class="text-muted">Following</small></p>
+                    <h5 class="text-center text-white"><%= @user.followings.count %></h5>
+                    <p class="card-text"><small class="text-white">Following</small></p>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold"><%= @user.followers.count %></h5>
-                    <p class="card-text"><small class="text-muted">Followers</small></p>
+                    <h5 class="text-center text-white"><%= @user.followers.count %></h5>
+                    <p class="card-text"><small class="text-white">Followers</small></p>
                 </div>
             </div>
         </div>
     </div>
-    <div style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title border-btm px-3 pb-2 m-0">FOLLOWED BY</h5>
+    <div>
+        <div>
+            <p class="text-white p-3">FOLLOWED BY</p>
         </div>
     </div>
     <div>
