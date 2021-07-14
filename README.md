@@ -9,8 +9,28 @@
 <tr><td> <img src="./app/assets/images/profile.PNG" alt="Example" style="width: 100%;"> </td></tr>
    
 </table>
-## Business requirements:
 
+## Business requirements:
+1. The user logs in to the app, only by typing the username (a proper authenticated login is not a requirement).
+2. The user is presented with the homepage (see the *Homepage* screenshot above) that includes:
+    1. Left-side menu (includes only links to pages that are implemented).
+    2. *Tweets* tab in the centre (skip *Photos* and *Videos* for this MVP).
+    3. Right-side section with *Who to follow (*skip *Trending for* this MVP).
+3. The Tweets section includes:
+    1. Simple form for creating a tweet.
+    2. List of all tweets (sorted by most recent) that display tweet text and author details.
+4. The Who to follow section includes:
+    1. List of profiles that are not followed by the logged-in user (ordered by most recently added).
+5. List of profiles that are not followed by the logged-in user (ordered by most recently added).
+    1. Left-side menu (includes only links to pages that are implemented).
+    2. Cover picture and Tweets tab in the centre (skip other tabs and Tweet to user form).
+    3. Right-side section with Profile detailed info.
+6. The Profile detailed info section includes:
+    1. User photo.
+    2. Button to follow a user.
+    3. Stats: total number of tweets, number of followers and number of following users.
+    4. List of people who follow this user.
+7. List of people who follow this user.
 
 ## Built With
 
@@ -22,20 +42,13 @@
 
 ## Getting Started
 
-### Prerequisites
-- Node
-- Rails
-- Yarn
-- Git
-- Node
-
 #### Clone this repository on to your local PC
 
 - Click on the `Code` green button
 - By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
 - In your local PC, open your terminal in the folder you would like to clone the repository into
-- Clone the repository with the command: `git clone (copied link)`; like so: `git clone https://github.com/AbdumurodovaZulfizar/ror-social-scaffold`
-- After the clone, type in the command `cd ror-socail-scaffold` to access the directory on the terminal
+- Clone the repository with the command: `git clone (copied link)`; like so: `git clone https://github.com/AbdumurodovaZulfizar/Open_Book`
+- After the clone, type in the command `cd Open_Book` to access the directory on the terminal
 - Then run `bundle update` to update gem file
 - And type `bundle install` to load all gems in this folder.
 - After run `rails db:migrate` for migration.
@@ -46,13 +59,16 @@
 - Ruby: 2.7.0
 - Rails: 5.2.3 
 - Postgres: >=9.5
+- Node
+- Yarn
+- Git
 
 ## To run test
 - cd into ror-social-scaffold
-- type `bundle exec rspec`
+- type `rspec`
 
 ## Live Demo
-[Mini Insta](https://arcane-island-34002.herokuapp.com/)
+
 
 ## Authors
 
@@ -81,4 +97,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 Copyright 2021 Zulfizar Abdumurodova
-- [MIT](https://github.com/AbdumurodovaZulfizar/ror-social-scaffold/blob/milestone_six/LICENSE) for this project.
+- [MIT](https://github.com/AbdumurodovaZulfizar/Open_Book/blob/build_app/LICENSE) for this project.
