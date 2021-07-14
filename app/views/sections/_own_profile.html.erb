@@ -1,5 +1,5 @@
 <% if Current.user %>
-  <div class="left-container bg-light-grey">
+  <div class="">
     <div class="p-4 dark-grey">
       <div class="row g-0">
         <div class="col-md-4">
@@ -8,7 +8,7 @@
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">
-              <%= link_to Current.user.full_name, user_path(Current.user.id), class: "light-grey" %>
+              <%= link_to Current.user.full_name, user_path(Current.user.id), class: "text-white none" %>
             </h5>
           </div>
         </div>
@@ -18,28 +18,28 @@
         <div class="d-flex text-center dark-grey">
             <div class="flex-fill">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold p-0 m-0"><%= Current.user.followings.count %></h5>
-                    <p class="card-text p-0 m-0"><small class="light-grey">Following</small></p>
+                    <h5 class="card-title fw-bold text-white p-0 m-0"><%= Current.user.followings.count %></h5>
+                    <p class="card-text text-white p-0 m-0"><small class="light-grey">Following</small></p>
                 </div>
             </div>
             <div class="flex-fill">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold p-0 m-0"><%= Current.user.followers.count %></h5>
-                    <p class="card-text p-0 m-0"><small class="light-grey">Followers</small></p>
+                    <h5 class="card-title text-white fw-bold p-0 m-0"><%= Current.user.followers.count %></h5>
+                    <p class="card-text text-white p-0 m-0"><small class="light-grey">Followers</small></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="d-flex flex-column bd-highlight mb-3 p-2">
-      <div class="p-2 bd-highlight">
-        <%= link_to root_path, class: "light-grey" do %>
-          <i class="fas fa-umbrella-beach m-2"></i>  Home
+    <div class="d-flex flex-column bd-highlight m-4">
+      <div class="p-2 bd-highlight m-2">
+        <%= link_to root_path, class: "text-white none" do %>
+          <i class="fas fa-home mx-2"></i>  Home
         <% end %>
       </div>
-      <div class="p-2 bd-highlight">
-        <%= link_to user_path(Current.user.id), class: "light-grey" do %>
-          <i class="fas fa-user-circle m-2"></i>  Profile
+      <div class="p-2 bd-highlight m-2">
+        <%= link_to user_path(Current.user.id), class: "text-white none" do %>
+          <i class="fas fa-user-circle mx-2"></i>  Profile
         <% end %>
       </div>
     </div>

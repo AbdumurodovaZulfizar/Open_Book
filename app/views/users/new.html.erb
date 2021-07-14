@@ -1,0 +1,35 @@
+<div class="col-6 mx-auto">
+    <div class="container form-control">
+    <h2 class="">Sign Up</h2>
+    <%= form_for(@user) do |f| %>
+        <% if @user.errors.any? %>
+            <div class="alert alert-danger">
+                <h5 class="fw-bold">Invalid input!</h5>
+                <%= @user.errors.full_messages.each do |error| %>
+                    <div><%= error %></div>
+                <% end %>
+            </div>
+        <% end %>
+
+        <p class="mb-3">
+            <%= f.label :username, class: "form-label" %>
+            <%= f.text_field :username, class: "form-control", autofocus: true, placeholder: "@zulfizar" %>
+        </p>
+        <p class="mb-3">
+            <%= f.label :full_name %>
+            <%= f.text_field :full_name, class: "form-control", placeholder: "Zulfizar Abdumurodova" %>
+        </p>
+        <p class="mb-3">
+            <%= f.label "Profile Photo" %>
+            <%= f.file_field :photo, class: "form-control", direct_upload: true %>
+        </p>
+        <p class="mb-3">
+            <%= f.label :cover_image %>
+            <%= f.file_field :cover_image, class: "form-control", direct_upload: true %>
+        </p>
+        <p class="mb-3">
+            <%= f.submit "Sign Up", class: "btn btn-outline-dark" %>
+        </p>
+    <% end %>
+    </div>
+</div>

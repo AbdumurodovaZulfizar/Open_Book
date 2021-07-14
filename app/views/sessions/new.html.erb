@@ -1,0 +1,17 @@
+<div class="col-6 mx-auto">
+    <div class="container form-control">
+    <h2 class="">Log In</h2>
+    <%= form_with url: sign_in_path do |f| %>
+    <div class="p-2">
+        <p class="my-3">
+            <%= f.label :username, class: "form-label" %>
+            <%= f.text_field :username, class: "form-control", autofocus: true, placeholder: "@zulfizar" %>
+        </p>
+
+        <p class="mb-3">
+            <%= f.submit "Log In", class: "btn btn-outline-dark" %>
+        </p>
+    </div>
+    <% end %>
+    </div>
+</div>

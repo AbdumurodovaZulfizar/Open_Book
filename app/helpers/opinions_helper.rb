@@ -3,7 +3,7 @@ module OpinionsHelper
     if Current.user
       render partial: 'opinions/home'
     else
-      render partial: 'shared/registration'
+      render partial: 'sections/registration'
     end
   end
 
@@ -20,25 +20,22 @@ module OpinionsHelper
     opinions.map do |opinion|
       content_tag :div, class: 'mb-3' do
         content_tag :div, class: 'row g-0 p-1' do
-          concat(content_tag(:div, class: 'col-md-2') do
-            tag('img', src: url_for(opinion.author.photo), class: %w[img-80 rounded]) if opinion.author.photo.attached?
+          concat(content_tag(:div, class: 'col-1') do
+            tag('img', src: url_for(opinion.author.photo), class: 'img-60') if opinion.author.photo.attached?
           end)
-          concat(content_tag(:div, class: 'col-md-10') do
-            content_tag :div, class: 'card-body' do
-              concat(content_tag(:h5, class: 'card-title') do
+          concat(content_tag(:div, class: 'col-11') do
+            content_tag :div, class: 'card-body m-0 py-0' do
+              concat(content_tag(:h5, class: '') do
                        link_to(user_path(opinion.author.id)) do
-                         concat(content_tag(:div, opinion.author.username, class: 'link-dark fw-bold'))
+                         concat(content_tag(:div, opinion.author.username, class: 'link-dark none'))
                        end
                      end)
-              concat(content_tag(:h5, opinion.text, class: 'card-text'))
+              concat(content_tag(:div, opinion.text, class: 'card-text'))
               concat(content_tag(:div, class: 'd-flex justify-content-between') do
-                concat(content_tag(:p, class: 'card-text') do
-                         concat(content_tag(:small, time_ago_in_words(opinion.created_at), class: 'text-muted'))
-                       end)
-                concat(content_tag(:div) do
-                  concat(content_tag(:span, upvote_or_downvote(opinion)))
-                  concat(content_tag(:i, '', class: 'fas fa-poll'))
-                  concat(content_tag(:small, opinion.votes.count, class: 'text-muted'))
+
+                concat(content_tag(:div, class: 'text-end') do
+                  concat(content_tag(:small, opinion.votes.count, class: ''))
+                  concat(content_tag(:span, upvote_or_downvote(opinion), class:'none'))
                 end)
               end)
             end
