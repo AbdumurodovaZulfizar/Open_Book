@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
 gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 3.1'
   # Capybara, the library that allows us to interact with the browser using Ruby
 
   # The following gems aids with the nuts and bolts
