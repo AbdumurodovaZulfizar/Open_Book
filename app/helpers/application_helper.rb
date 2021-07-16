@@ -1,4 +1,4 @@
-#rubocop disable
+# rubocop:disable Metrics/ModuleLength
 module ApplicationHelper
   def alert_btn
     return render partial: 'layouts/alerts' if flash[:alert]
@@ -125,3 +125,4 @@ module ApplicationHelper
     end.join.html_safe
   end
 end
+# rubocop:disable Metrics/ModuleLength

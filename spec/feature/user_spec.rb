@@ -1,3 +1,4 @@
+# rubocop:disable Layout/EndOfLine
 require 'rails_helper'
 
 RSpec.describe 'Creating a user', type: :feature do
@@ -11,3 +12,4 @@ RSpec.describe 'Creating a user', type: :feature do
     expect(page).to have_content('Zulfizar Abdumurodova')
   end
 end
+# rubocop:enable Layout/EndOfLine

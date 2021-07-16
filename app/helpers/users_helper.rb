@@ -1,3 +1,4 @@
+# rubocop:enable Style/IfUnlessModifier
 module UsersHelper
   def cover_image
     return unless @user.cover_image.attached?
@@ -30,3 +31,4 @@ module UsersHelper
     end.join.html_safe
   end
 end
+# rubocop:enable Style/IfUnlessModifier

@@ -1,3 +1,4 @@
+# rubocop:disable Layout/EndOfLine
 require 'rails_helper'
 
 RSpec.describe User do
@@ -21,3 +22,4 @@ RSpec.describe User do
     end
   end
 end
+# rubocop:enable Layout/EndOfLine

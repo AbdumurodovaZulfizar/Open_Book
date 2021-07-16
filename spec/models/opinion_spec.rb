@@ -1,3 +1,4 @@
+# rubocop:disable Layout/EndOfLine
 require 'rails_helper'
 
 RSpec.describe Opinion, type: :model do
@@ -19,3 +20,4 @@ RSpec.describe Opinion, type: :model do
     end
   end
 end
+# rubocop:enable Layout/EndOfLine
