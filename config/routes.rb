@@ -9,5 +9,4 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy'
   get 'votes', to: 'votes#create'
   get 'votes/:id', to: 'votes#destroy'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
