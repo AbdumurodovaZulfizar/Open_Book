@@ -1,4 +1,4 @@
-# rubocop:enable Style/IfUnlessModifier
+# rubocop:disable Style/IfUnlessModifier
 module UsersHelper
   def cover_image
     return unless @user.cover_image.attached?

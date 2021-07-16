@@ -125,4 +125,4 @@ module ApplicationHelper
     end.join.html_safe
   end
 end
-# rubocop:disable Metrics/ModuleLength
+# rubocop:enable Metrics/ModuleLength
