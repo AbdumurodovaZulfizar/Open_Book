@@ -1,4 +1,4 @@
-#rubocop disable 
+#rubocop disable
 module ApplicationHelper
   def alert_btn
     return render partial: 'layouts/alerts' if flash[:alert]

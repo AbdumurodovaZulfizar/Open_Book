@@ -32,10 +32,9 @@ module OpinionsHelper
                      end)
               concat(content_tag(:div, opinion.text, class: 'card-text'))
               concat(content_tag(:div, class: 'd-flex justify-content-between') do
-
                 concat(content_tag(:div, class: 'text-end') do
                   concat(content_tag(:small, opinion.votes.count, class: ''))
-                  concat(content_tag(:span, upvote_or_downvote(opinion), class:'none'))
+                  concat(content_tag(:span, upvote_or_downvote(opinion), class: 'none'))
                 end)
               end)
             end
