@@ -13,10 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.width {
+  width: 300px;
+}
 
-.col-9,
-.col-3 {
-  padding: 1px;
+.white {
+  background-color: white;
 }
 
 body,
@@ -36,8 +38,13 @@ html {
   background-attachment: fixed;
 }
 
-.dark_blue {
-  background-color: rgb(10, 10, 48);
+.blue {
+  background-color: #0d6efd;
+}
+
+.grey {
+  background-color: #475968;
+  height: 100vh;
 }
 
 .img-80 {

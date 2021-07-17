@@ -24,13 +24,13 @@ module OpinionsHelper
             tag('img', src: url_for(opinion.author.photo), class: 'img-60') if opinion.author.photo.attached?
           end)
           concat(content_tag(:div, class: 'col-11') do
-            content_tag :div, class: 'card-body m-0 py-0' do
+            content_tag :div, class: 'card-body m-0 py-0 white rounded' do
               concat(content_tag(:h5, class: 'none') do
                        link_to(user_path(opinion.author.id)) do
                          concat(content_tag(:div, opinion.author.username, class: 'link-dark none'))
                        end
                      end)
-              concat(content_tag(:div, opinion.text, class: 'card-text'))
+              concat(content_tag(:div, opinion.text, class: ''))
               concat(content_tag(:div, class: 'd-flex justify-content-between') do
                 concat(content_tag(:div, class: 'text-end') do
                   concat(content_tag(:small, opinion.votes.count, class: ''))

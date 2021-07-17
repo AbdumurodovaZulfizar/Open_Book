@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-8">
+  <div class="col-9 px-4">
 
     <%= form_for(@opinion) do |form| %>
 
@@ -13,11 +13,11 @@
     </p>
     <% end %>
 </div><br />
-    <div class="card p-1 mt-5">
+    <div class="p-1 mt-5">
       <%= show_opinions(@opinions) %>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-3">
     <%= render partial: "sections/who_to_follow" %>
   </div>
 </div>

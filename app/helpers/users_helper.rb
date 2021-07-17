@@ -8,7 +8,7 @@ module UsersHelper
 
   def user_opinion(user)
     user.opinions.map do |opinion|
-      content_tag :div, class: 'card mb-3' do
+      content_tag :div, class: 'mb-3' do
         content_tag :div, class: 'row g-0' do
           concat(content_tag(:div, class: 'col-md-2 d-flex justify-content-center align-items-center') do
             concat(content_tag(:div) do
@@ -17,7 +17,7 @@ module UsersHelper
               end
             end)
           end)
-          concat(content_tag(:div, class: 'col-md-10') do
+          concat(content_tag(:div, class: 'col-md-10 rounded white') do
             content_tag :div, class: 'card-body p-2' do
               concat(content_tag(:h5, @user.username, class: 'card-title link-dark fw-bold'))
               concat(content_tag(:p, opinion.text, class: 'card-text'))

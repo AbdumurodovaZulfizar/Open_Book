@@ -47,7 +47,7 @@ module ApplicationHelper
   end
 
   def left_user_photo
-    tag('img', src: url_for(Current.user.photo), class: 'img-80') if Current.user.photo.attached?
+    tag('img', src: url_for(Current.user.photo), class: 'img-60') if Current.user.photo.attached?
   end
 
   def login_navbar
