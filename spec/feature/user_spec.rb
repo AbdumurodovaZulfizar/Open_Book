@@ -8,7 +8,6 @@ RSpec.describe 'Creating a user', type: :feature do
     fill_in 'user[username]', with: '@zulfizar'
     fill_in 'user[full_name]', with: 'Zulfizar Abdumurodova'
     click_button 'sign_up'
-    # visit root_path
     expect(page).to have_content('Zulfizar Abdumurodova')
   end
 end
