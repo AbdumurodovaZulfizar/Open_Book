@@ -75,7 +75,7 @@ module ApplicationHelper
 
   def right_home
     User.order(created_at: :desc).all.map do |user|
-      unless Current.user == user
+      next if  Current.user == user
         content_tag :div, class: 'right_home my-3' do
           content_tag :div, class: 'row g-0' do
             concat(content_tag(:div, class: 'col-md-3') do
@@ -95,7 +95,6 @@ module ApplicationHelper
             end)
           end
         end
-      end
     end.join.html_safe
   end
 
