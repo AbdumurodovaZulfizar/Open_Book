@@ -74,31 +74,28 @@ module ApplicationHelper
   end
 
   def right_home
-
-    
-
     User.order(created_at: :desc).all.map do |user|
       if Current.user != user
-      content_tag :div, class: 'right_home my-3' do
-        content_tag :div, class: 'row g-0' do
-          concat(content_tag(:div, class: 'col-md-3') do
-            tag('img', src: url_for(user.photo), class: 'img-60') if user.photo.attached?
-          end)
-          concat(content_tag(:div, class: 'col-md-9') do
-            content_tag :div, class: 'card-body py-0 pl-3' do
-              concat(content_tag(:div, class: '') do
-                concat(content_tag(:h6, class: '') do
-                  link_to(user_path(user.id), class: 'text-white') do
-                    concat(content_tag(:span, user.full_name))
-                  end
+        content_tag :div, class: 'right_home my-3' do
+          content_tag :div, class: 'row g-0' do
+            concat(content_tag(:div, class: 'col-md-3') do
+              tag('img', src: url_for(user.photo), class: 'img-60') if user.photo.attached?
+            end)
+            concat(content_tag(:div, class: 'col-md-9') do
+              content_tag :div, class: 'card-body py-0 pl-3' do
+                concat(content_tag(:div, class: '') do
+                  concat(content_tag(:h6, class: '') do
+                    link_to(user_path(user.id), class: 'text-white') do
+                      concat(content_tag(:span, user.full_name))
+                    end
+                  end)
+                  concat(content_tag(:div) { concat(content_tag(:span, follow_or_unfollow_friend_request(user))) })
                 end)
-                concat(content_tag(:div) { concat(content_tag(:span, follow_or_unfollow_friend_request(user))) })
-              end)
-            end
-          end)
+              end
+            end)
+          end
         end
       end
-    end
     end.join.html_safe
   end
 
@@ -113,7 +110,7 @@ module ApplicationHelper
       content_tag :div, class: 'mb-1 right_home' do
         content_tag :div, class: 'row g-0 p-3' do
           concat(content_tag(:div, class: 'col-md-4') do
-            tag('img', src: url_for(f.follower.photo), class: "img-60")
+            tag('img', src: url_for(f.follower.photo), class: 'img-60')
           end)
           concat(content_tag(:div, class: 'col-md-8') do
             content_tag :div, class: 'px-3 py-0' do
