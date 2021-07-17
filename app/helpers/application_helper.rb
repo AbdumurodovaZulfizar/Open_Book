@@ -113,7 +113,7 @@ module ApplicationHelper
       content_tag :div, class: 'mb-1 right_home' do
         content_tag :div, class: 'row g-0 p-3' do
           concat(content_tag(:div, class: 'col-md-4') do
-            tag('img', src: url_for(f.follower.photo), class: %w[img-80 rounded-circle mx-auto d-block])
+            tag('img', src: url_for(f.follower.photo), class: "img-60")
           end)
           concat(content_tag(:div, class: 'col-md-8') do
             content_tag :div, class: 'px-3 py-0' do
