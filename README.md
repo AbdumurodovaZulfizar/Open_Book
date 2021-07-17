@@ -50,6 +50,7 @@
 - After the clone, type in the command `cd Open_Book` to access the directory on the terminal
 - Then run `bundle update` to update the gem file
 - And type `bundle install` to load all gems in this folder.
+- After type `yarn install`.
 - Then run `rails db:create` to create database
 - After run `rails db:migrate` for migration.
 - Type `rails s` on the terminal, and type `localhost:3000` on your browser.
