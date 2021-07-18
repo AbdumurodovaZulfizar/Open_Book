@@ -70,7 +70,7 @@
 
 ## Live Demo
 
-- [Click Here](https://greve-chaise-09553.herokuapp.com/)
+- [Click Here](https://recbook-app.herokuapp.com/)
 
 ## Authors
 
