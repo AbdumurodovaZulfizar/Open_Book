@@ -90,7 +90,7 @@ module ApplicationHelper
                     concat(content_tag(:span, user.full_name))
                   end
                 end)
-                concat(content_tag(:div) { concat(content_tag(:span, follow_or_unfollow_friend_reques(user))) })
+                concat(content_tag(:div) { concat(content_tag(:span, follow_or_unfollow_friend_request(user))) })
               end)
             end
           end)
