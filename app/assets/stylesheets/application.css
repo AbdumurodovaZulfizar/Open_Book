@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.width {
+  width: 300px;
+}
+
+.white {
+  background-color: white;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  background-image: linear-gradient(rgba(51, 50, 53, 0.5), rgba(19, 4, 80, 0.5)), url(https://c4.wallpaperflare.com/wallpaper/417/445/320/anime-original-book-chair-library-hd-wallpaper-thumb.jpg);
+  background-repeat: repeat-y;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.blue {
+  background-color: #0d6efd;
+}
+
+.grey {
+  background-color: #475968;
+  height: 100vh;
+}
+
+.img-80 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.img-60 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.cover_image {
+  width: 100%;
+  height: 250px;
+}
+
+.none {
+  text-decoration: none;
+}
+
+.height {
+  height: 80px;
+}

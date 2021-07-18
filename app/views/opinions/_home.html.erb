@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-9 px-4">
+
+    <%= form_for(@opinion) do |form| %>
+
+    <%= check_errors %>
+<div class="mb-2">
+    <p class="">
+      <%= form.text_area :text, class: "form-control height m-0", placeholder: "Recommend useful books..." %>
+    </p>
+    <p class="">
+      <%= form.submit "Recommend", class: "btn btn-dark btn-outline-light m-0 p-2 float-end" %>
+    </p>
+    <% end %>
+</div><br />
+    <div class="p-1 mt-5">
+      <%= show_opinions(@opinions) %>
+    </div>
+  </div>
+  <div class="col-3">
+    <%= render partial: "sections/who_to_follow" %>
+  </div>
+</div>
